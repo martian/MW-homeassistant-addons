@@ -1,4 +1,29 @@
 ARG BUILD_FROM=thomx/fr24feed-piaware:1.32.1
+
+# Rebuild dump1090 with custom additions
+
+FROM debian:bullseye as dump1090
+
+ENV DUMP1090_VERSION RTL-SDR-bias-tee
+
+# DUMP1090
+RUN apt-get update && \
+    apt-get install -y \
+    sudo \
+    git-core \
+    build-essential \
+    debhelper \
+    librtlsdr-dev \
+    pkg-config \
+    libncurses5-dev \
+    libbladerf-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /tmp
+RUN git clone -b ${DUMP1090_VERSION} --depth 1 https://github.com/martian/dump1090 && \
+    cd dump1090 && \
+    make CPUFEATURES=no
+
 FROM $BUILD_FROM
 
 ENV TZ=UTC
@@ -22,6 +47,10 @@ RUN tar xvfz /tmp/${version}.tar.gz adsb-hassio-sensors-${version}/{etc,usr} --s
 
 # add the options.json to environment variable magic
 COPY export-env-from-config.sh /export-env-from-config.sh
+
+# Replace the dump1090 binary with one that supports bias tee control.
+COPY --from=dump1090 /tmp/dump1090/dump1090  /usr/lib/fr24/
+
 RUN find /etc/s6-overlay/s6-rc.d/ -name script | xargs sed -i '1 a\source /export-env-from-config.sh'
 RUN find /etc/s6-overlay/s6-rc.d/ -name run | xargs sed -i '1 a\source /export-env-from-config.sh'
 

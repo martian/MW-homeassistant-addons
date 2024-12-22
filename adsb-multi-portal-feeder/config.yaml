@@ -1,13 +1,13 @@
 slug: adsb-multi-portal-feeder
 url: https://github.com/MaxWinterstein/homeassistant-addons/
-image: ghcr.io/maxwinterstein/homeassistant-adsb-multi-portal-feeder-{arch}
+#image: ghcr.io/maxwinterstein/homeassistant-adsb-multi-portal-feeder-{arch}
 usb: true
 version: 1.32.1
 arch:
   - armv7
   - aarch64
   - amd64
-description: Dump1090 based feeder for FlightRadar24, FlightAware and more
+description: Dump1090 based feeder for FlightRadar24, FlightAware and more [dump1090 mod by martian]
 hassio_api: true
 homeassistant_api: true
 ingress: true
