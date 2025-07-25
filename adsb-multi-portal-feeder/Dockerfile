@@ -1,4 +1,4 @@
-ARG BUILD_FROM=thomx/fr24feed-piaware:1.32.1
+ARG BUILD_FROM=thomx/fr24feed-piaware:2.2.0
 
 # Rebuild dump1090 with custom additions
 
@@ -30,7 +30,7 @@ ENV TZ=UTC
 
 # add bashio (thx https://github.com/hassio-addons/addon-debian-base/blob/main/base/Dockerfile#L47)
 ADD https://github.com/hassio-addons/bashio/archive/v0.15.0.tar.gz  /tmp/bashio.tar.gz
-RUN apt-get update && apt-get install -y curl jq && mkdir /tmp/bashio \
+RUN apt-get update && apt-get install -y curl jq bc && mkdir /tmp/bashio \
     && tar zxvf \
         /tmp/bashio.tar.gz \
         --strip 1 -C /tmp/bashio \

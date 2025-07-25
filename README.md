@@ -1,6 +1,6 @@
 # Home Assistant Add-On repository (by Max Winterstein)
 
-<a href='https://ko-fi.com/MaxWinterstein' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com'></a>
+<a href='https://ko-fi.com/MaxWinterstein' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 _Everything here is ment to be **experimental**. Happy to see feedback!_
 
@@ -16,14 +16,6 @@ Observe flight traffic using some cheap ADS-B USB-Stick and feed towards FlightR
 
 Based on the incredible [docker-fr24feed-piaware-dump1090](https://github.com/Thom-x/docker-fr24feed-piaware-dump1090) docker image by [Thom-x](https://github.com/Thom-x).
 
-### <img src="awtrix/icon.png" width="40px"> AWTRIX Controller
-
-(AWsome maTRIX) is a full color dot matrix that displays applications from simple time display to Fortnite account statistics.
-
-Most of the work was done from/within https://github.com/lubeda/repository - I just made it work and adjusted some little things.
-
-Made for the awesome AWTRIX project by blueforcer. Even it is discontinued, I like it.
-
 ### <img src="cups/icon.png" width="40px"> CUPS ([cups.org](http://www.cups.org))
 
 The well known printing server.
@@ -37,10 +29,6 @@ Integrate your TooGoodToGo favourites to Home Assistant via MQTT.
 ### <img src="ioBroker/icon.png" width="40px"> ioBroker ([iobroker.net](http://iobroker.net))
 
 Run ioBroker as Add-on.
-
-### <img src="octoprint-proxy/icon.png" width="40px"> OctoPrint Reverse Proxy ([octoprint.org](http://octoprint.org))
-
-Small proxy to add OctoPrint to the Home Assistant.
 
 ## Installation
 
@@ -68,3 +56,19 @@ Forwards Eufy Security push notifications to Home Assistant via MQTT.
 
 [repository-badge]: https://img.shields.io/badge/Add%20repository%20to%20my-Home%20Assistant-41BDF5?logo=home-assistant&style=for-the-badge
 [repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FMaxWinterstein%2Fhomeassistant-addons
+
+### <img src="awtrix/icon.png" width="40px"> AWTRIX Controller
+
+#### AWTRIX 3 no longer needs an running server
+
+(AWsome maTRIX) is a full color dot matrix that displays applications from simple time display to Fortnite account statistics.
+
+Most of the work was done from/within https://github.com/lubeda/repository - I just made it work and adjusted some little things.
+
+Made for the awesome AWTRIX project by blueforcer. Even it is discontinued, I like it.
+
+### <img src="octoprint-proxy/icon.png" width="40px"> OctoPrint Reverse Proxy ([octoprint.org](http://octoprint.org))
+
+#### Never really worked and no longer used by me
+
+Small proxy to add OctoPrint to the Home Assistant.

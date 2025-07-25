@@ -2,6 +2,59 @@
 
 <!-- towncrier release notes start -->
 
+## [3.5.0.0] - 2025-07-20
+
+### Changed
+
+- Updated toogoodtogo-ha-mqtt-bridge to v3.5.0 ([#381](https://github.com/MaxWinterstein/homeassistant-addons/issues/381))
+
+
+## [3.4.0.0] - 2025-07-13
+
+### Changed
+
+- Updated toogoodtogo-ha-mqtt-bridge to v3.4.0 ([#379](https://github.com/MaxWinterstein/homeassistant-addons/issues/379))
+
+
+## [3.3.0.0] - 2025-05-04
+
+ > ⚠️ This version contains a little change of the timezone formatting, double check if your automation needs adjustments
+
+Finally, a new feature 🥳
+
+Big thanks to [@Hypfer](https://github.com/Hypfer) for providing some new sensors <3
+
+- Next and upcoming collection sensors
+- Last update sensor
+
+See [#234](https://github.com/MaxWinterstein/toogoodtogo-ha-mqtt-bridge/pull/234) for more details
+
+### Changed
+
+- Updated toogoodtogo-ha-mqtt-bridge to v3.3.0 ([#346](https://github.com/MaxWinterstein/homeassistant-addons/issues/346))
+
+
+## [3.2.1.0] - 2025-05-02
+
+### Changed
+
+- Updated toogoodtogo-ha-mqtt-bridge to v3.2.1 ([#344](https://github.com/MaxWinterstein/homeassistant-addons/issues/344))
+
+
+## [3.2.0.0] - 2025-04-29
+
+### Changed
+
+- Update toogoodtogo-ha-mqtt-bridge from v3.1.0 to v3.2.0 (see [release notes](https://github.com/MaxWinterstein/toogoodtogo-ha-mqtt-bridge/releases))
+
+
+## [3.1.0.0] - 2025-03-08
+
+### Changed
+
+- Update toogoodtogo-ha-mqtt-bridge from v3.0.0 to v3.1.0 (see [release notes](https://github.com/MaxWinterstein/toogoodtogo-ha-mqtt-bridge/releases))
+
+
 ## [3.0.0.0] - 2024-11-28
 
 - Update `toogoodtogo-ha-mqtt-bridge` to `3.0.0` (see [release notes](https://github.com/MaxWinterstein/toogoodtogo-ha-mqtt-bridge/releases))

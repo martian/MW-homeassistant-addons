@@ -2,6 +2,19 @@
 
 <!-- towncrier release notes start -->
 
+## [2.3.0] - 2025-07-10
+
+### Changed
+
+- Add support for Home Assistant OS 16 by ignoring ulimit adjustments - see [#365](https://github.com/MaxWinterstein/homeassistant-addons/issues/365)
+
+## [2.2.0] - 2025-06-06
+
+### Changed
+
+- Update `thomx/fr24feed-piaware` to `2.2.0` see [their release notes](https://github.com/Thom-x/docker-fr24feed-piaware-dump1090/releases/tag/2.2.0) for more
+
+
 ## [1.32.1] - 2024-04-18
 
 - Update `thomx/fr24feed-piaware` to `1.32.1` see [their release notes](https://github.com/Thom-x/docker-fr24feed-piaware-dump1090/releases/tag/1.32.1) for more
